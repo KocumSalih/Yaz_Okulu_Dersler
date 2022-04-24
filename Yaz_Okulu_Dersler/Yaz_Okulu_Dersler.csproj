@@ -1,0 +1,240 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3F460FBE-D76E-4096-A17E-8957E5987D5F}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Yaz_Okulu_Dersler</RootNamespace>
+    <AssemblyName>Yaz_Okulu_Dersler</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44354</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BasvuruFormu.aspx" />
+    <Content Include="BasvuruGuncelle.aspx" />
+    <Content Include="BasvuruSil.aspx" />
+    <Content Include="DersGuncelle.aspx" />
+    <Content Include="DersSayfasi.aspx" />
+    <Content Include="DersSil.aspx" />
+    <Content Include="OgrenciGuncelle.aspx" />
+    <Content Include="OgrenciSayfasi.aspx" />
+    <Content Include="OgrenciSil.aspx" />
+    <Content Include="OgretmenGuncelle.aspx" />
+    <Content Include="OgretmenSayfasi.aspx" />
+    <Content Include="OgretmenSil.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BasvuruFormu.aspx.cs">
+      <DependentUpon>BasvuruFormu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BasvuruFormu.aspx.designer.cs">
+      <DependentUpon>BasvuruFormu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BasvuruGuncelle.aspx.cs">
+      <DependentUpon>BasvuruGuncelle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BasvuruGuncelle.aspx.designer.cs">
+      <DependentUpon>BasvuruGuncelle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BasvuruSil.aspx.cs">
+      <DependentUpon>BasvuruSil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BasvuruSil.aspx.designer.cs">
+      <DependentUpon>BasvuruSil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DersGuncelle.aspx.cs">
+      <DependentUpon>DersGuncelle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DersGuncelle.aspx.designer.cs">
+      <DependentUpon>DersGuncelle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DersSayfasi.aspx.cs">
+      <DependentUpon>DersSayfasi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DersSayfasi.aspx.designer.cs">
+      <DependentUpon>DersSayfasi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DersSil.aspx.cs">
+      <DependentUpon>DersSil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DersSil.aspx.designer.cs">
+      <DependentUpon>DersSil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage.master.cs">
+      <DependentUpon>MasterPage.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage.master.designer.cs">
+      <DependentUpon>MasterPage.master</DependentUpon>
+    </Compile>
+    <Compile Include="OgrenciGuncelle.aspx.cs">
+      <DependentUpon>OgrenciGuncelle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OgrenciGuncelle.aspx.designer.cs">
+      <DependentUpon>OgrenciGuncelle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OgrenciSayfasi.aspx.cs">
+      <DependentUpon>OgrenciSayfasi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OgrenciSayfasi.aspx.designer.cs">
+      <DependentUpon>OgrenciSayfasi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OgrenciSil.aspx.cs">
+      <DependentUpon>OgrenciSil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OgrenciSil.aspx.designer.cs">
+      <DependentUpon>OgrenciSil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OgretmenGuncelle.aspx.cs">
+      <DependentUpon>OgretmenGuncelle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OgretmenGuncelle.aspx.designer.cs">
+      <DependentUpon>OgretmenGuncelle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OgretmenSayfasi.aspx.cs">
+      <DependentUpon>OgretmenSayfasi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OgretmenSayfasi.aspx.designer.cs">
+      <DependentUpon>OgretmenSayfasi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OgretmenSil.aspx.cs">
+      <DependentUpon>OgretmenSil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OgretmenSil.aspx.designer.cs">
+      <DependentUpon>OgretmenSil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MasterPage.master" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessLogicLayer\BusinessLogicLayer.csproj">
+      <Project>{5120ecec-c3cf-4dae-ab6d-e43c6b5515b4}</Project>
+      <Name>BusinessLogicLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAccessLayer\DataAccessLayer.csproj">
+      <Project>{7BD9A9A4-C0F1-4272-9E91-88E2E1CA9C55}</Project>
+      <Name>DataAccessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EntityFramework\EntityFramework.csproj">
+      <Project>{949925b0-ffcb-4856-9d16-9a2bd12e4dc4}</Project>
+      <Name>EntityFramework</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>59971</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44354/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
